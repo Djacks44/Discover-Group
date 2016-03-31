@@ -1,0 +1,14 @@
+	table {
+		width:60%;
+	}
+	td:nth-child(2), td:nth-child(3) 
+		{
+		    text-align: right;
+		}
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+
+#tour-dates {
+	padding-bottom: 40px;
+}
