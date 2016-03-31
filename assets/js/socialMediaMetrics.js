@@ -5,6 +5,7 @@ var queryURL = '';
 var artistID = '';
 var artistURI = '';
 var Artist = '';
+var vID = '';
 
 function getArtistID(Artist) {
    // Run an initial search to identify the artist unique Spotify ID
@@ -144,7 +145,7 @@ $('#selectArtist').on('click', function(){
     getArtistTrack(Artist);
     console.log("before youtube");
     $('#youtube').empty();
-    youtubeApiCall();
+    youtubeApiCall(Artist);
     console.log("after youtube");
 
     // Prevents moving to the next page

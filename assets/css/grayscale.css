@@ -424,5 +424,29 @@ body {
 .light img{
     width: 30px;
     height: 30px;
-}
+}#messagesDiv{
+        border: inset;
+        width:50%;
+        min-height: 100px;
+    margin-left: 25%;
+    color: black;
+    background-color: white;
+
+    }#contact{
+    border:transparent;
+    border-color: white;
+   }#nameInput{
+color: black;
+margin-top: 20px;
+margin-bottom: 40px;
+    }#messageInput{
+color: black;
+margin-top: 20px;
+margin-bottom: 40px;
+
+    }.red{
+        border:transparent;
+        max-width: 100px;
+    }
+
 

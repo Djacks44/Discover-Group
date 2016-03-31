@@ -6,7 +6,7 @@ function youtubeApiCall(Artist){
     vID = response2.items[0].id.videoId
     console.log(vID)
     var vid = '<iframe width="560" height="315" src="https://www.youtube.com/embed/'+vID+'" frameborder="0" allowfullscreen></iframe>'
-    $('#youtube').append(vid)
+    $('#youtube').html(vid)
        return false;
        })
 
