@@ -372,7 +372,7 @@ body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 #search {
-  
+
    top: 0px;
    left: 0px;
    margin-right: 500px;
@@ -383,10 +383,12 @@ body {
 
 
 .searchField {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: transparent;
    position: relative;
    top: 50%;
    width: 100%;
-   color: black;
+   color: floralwhite;
    font-size: 60px;
    font-weight: 300;
    text-align: center;
@@ -400,11 +402,17 @@ body {
 }
 #search .btn {
    position: relative;
+   background-color: floralwhite;
+   color: royalblue;
+   font:bold;
+   border: none;
    top: 50%;
    left: 50%;
    margin-top: 61px;
    margin-left: -45px;
-} .btn.btn-primary{
+} 
+
+.btn.btn-primary{
    position: relative;
    margin-right: 100%
 }
