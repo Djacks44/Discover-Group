@@ -78,7 +78,8 @@
                         <h2 class="brand-heading"><img src="assets/img/logo.PNG" alt="discover"></img></h2><br><br>
                 <div id="search">
                 <form>
-                <input class="searchField" type="text" id="artist-input" value="" placeholder="Type an Artist or Band " />
+                <input class="searchField" type="text" id="artist-input" value="" placeholder="Type an Artist or Band " onkeyup = "Validate(this)" />
+                <p >Only letters, spaces and numbers will be accepted</p>
                 <button type="submit" class="btn btn-primary" id="selectArtist" >Search</button>
                 </form>
                 </div>

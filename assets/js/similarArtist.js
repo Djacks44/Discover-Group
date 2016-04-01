@@ -24,7 +24,6 @@ function getSimilarArtist () {
 function displaySimilarInfo(similarName){
   $('#similarView').empty();
   var similarNameURI = similarName.replace(/\s+/g, "+"); 
-  debugger;
   var baseURL = "http://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&limit=1&";
   var queryURL = baseURL + 'q=' + similarNameURI;
   console.log(queryURL);

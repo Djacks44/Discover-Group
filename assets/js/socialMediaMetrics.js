@@ -7,6 +7,10 @@ var artistURI = '';
 var Artist = '';
 var vID = '';
 
+function Validate(txt) {
+    txt.value = txt.value.replace(/[^a-zA-Z 0-9\n\r]+/g, '');
+ }
+
 function getArtistID(Artist) {
    // Run an initial search to identify the artist unique Spotify ID
    artistURI = encodeURI(Artist);
