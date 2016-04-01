@@ -6,6 +6,13 @@
       console.log(response);
       // Prints the Artist ID from the Spotify Object to console.
       var artistID = response.artists.items[0].id;
+      var arName = response.artists.items[0].name
+      var artistPic = response.artists.items[0].images[0].url
+      var pic = ' <img src="'+artistPic+'" width="200" height="250">'
+      console.log(pic)
+      $("#picDiv").html(pic);
+       $("#aName").text(arName);
+      //gets a pic of the artist
       // Then we build a SECOND URL to query another Spotify endpoint (this one for the tracks)
       var queryURLTracks = "https://api.spotify.com/v1/artists/" + artistID +"/top-tracks?country=US";
       // We then run a second AJAX call to get the tracks associated with that Spotify ID
@@ -13,9 +20,13 @@
         // Gets the tracks
         console.log(trackResponse);
         // Builds a Spotify player playing the top song associated with the artist. (NOTE YOU NEED TO BE LOGGED INTO SPOTIFY)
-        var player = '<iframe src="https://embed.spotify.com/?uri=spotify:track:'+trackResponse.tracks[0].id+'" frameborder="0" allowtransparency="true"></iframe>';
+        var player = '<iframe src="https://embed.spotify.com/?uri=spotify:track:'+trackResponse.tracks[0].id+'" frameborder="0" allowtransparency="true"></iframe>&nbsp&nbsp&nbsp&nbsp&nbsp';
+        var player1 = '<iframe src="https://embed.spotify.com/?uri=spotify:track:'+trackResponse.tracks[1].id+'" frameborder="0" allowtransparency="true"></iframe>&nbsp&nbsp&nbsp&nbsp&nbsp';
+        var player2 = '<iframe src="https://embed.spotify.com/?uri=spotify:track:'+trackResponse.tracks[2].id+'" frameborder="0" allowtransparency="true"></iframe>';
         // Appends the new player into the HTML
         $("#playerDiv").append(player);
+        $("#playerDiv").append(player1);
+        $("#playerDiv").append(player2);
         $("#playerDiv").css("padding-bottom", '30px');
         $("#playerDiv").css("padding-top", '30px');
 
