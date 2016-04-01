@@ -446,7 +446,8 @@ margin-bottom: 40px;
 
     }.red{
         border:transparent;
-        max-width: 100px;
+        text-align: left;
+        margin-left: 5px;
     }#tour-dates{
         margin-left: 32%
     }
