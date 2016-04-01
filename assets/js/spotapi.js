@@ -7,8 +7,8 @@
       // Prints the Artist ID from the Spotify Object to console.
       var artistID = response.artists.items[0].id;
       var arName = response.artists.items[0].name
-      var artistPic = response.artists.items[0].images[0].url
-      var pic = ' <img src="'+artistPic+'" width="200" height="250">'
+      var artistPic = response.artists.items[0].images[2].url
+      var pic = ' <img src="'+artistPic+'">'
       console.log(pic)
       $("#picDiv").html(pic);
        $("#aName").text(arName);
