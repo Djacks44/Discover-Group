@@ -36,7 +36,7 @@ function displaySimilarInfo(similarName){
   var results = gifData.data;
   console.log('results in');
   console.log(results);
-  var similarP = $('<p>').text("Name: " + similarName);
+  var similarP = $('<p>').text(similarName);
 
 	for (var i = 0; i < results.length; i++) {    
 		var similarDiv = $('<div>');
