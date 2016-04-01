@@ -11,13 +11,13 @@ function getArtistID(Artist) {
    // Run an initial search to identify the artist unique Spotify ID
    artistURI = encodeURI(Artist);
    console.log(artistURI);
-      queryURL = "http://api.musicgraph.com/api/v2/artist/search?api_key=" + apiKey + "&name=" + artistURI;
+      queryURL = "https://api.musicgraph.com/api/v2/artist/search?api_key=" + apiKey + "&name=" + artistURI;
         console.log("queryURL " + queryURL);
     $('#socialMediaBody').empty();
         $.ajax({url: queryURL, method: 'GET'}).done(function(response) {
         console.log(response);
       artistID = response.data[0].id;
-      queryURL = "http://api.musicgraph.com/api/v2/artist/" + artistID + "/metrics?api_key=" + apiKey;
+      queryURL = "https://api.musicgraph.com/api/v2/artist/" + artistID + "/metrics?api_key=" + apiKey;
 
       $.ajax({url: queryURL, method: 'GET'}).done(function(metricsResponse) {
         console.log(metricsResponse);
