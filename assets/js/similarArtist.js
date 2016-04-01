@@ -2,7 +2,7 @@ var similarName = '';
 
 function getSimilarArtist () {
   console.log('in getSimilarArtist')
-  queryURL = "https://api.musicgraph.com/api/v2/artist/" + artistID + "/similar?api_key=" + apiKey + "&genre=Pop&limit=5";
+  queryURL = "http://api.musicgraph.com/api/v2/artist/" + artistID + "/similar?api_key=" + apiKey + "&genre=Pop&limit=5";
   console.log("similar" + queryURL)
   $.ajax({url: queryURL,
    method: 'GET'
@@ -25,7 +25,7 @@ function displaySimilarInfo(similarName){
   $('#similarView').empty();
   var similarNameURI = similarName.replace(/\s+/g, "+"); 
   debugger;
-  var baseURL = "https://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&limit=1&";
+  var baseURL = "http://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&limit=1&";
   var queryURL = baseURL + 'q=' + similarNameURI;
   console.log(queryURL);
 
